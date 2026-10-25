@@ -1,0 +1,9 @@
+[project]
+name = "atelier-agent-de-code"
+version = "0.1.0"
+description = "Dépôt modèle de l'atelier de découverte d'un agent de code"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["partie2-relecteur"]
+testpaths = ["partie2-relecteur/tests"]

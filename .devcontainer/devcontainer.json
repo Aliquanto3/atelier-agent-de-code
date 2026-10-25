@@ -1,0 +1,21 @@
+{
+  "name": "Atelier agent de code",
+  "image": "mcr.microsoft.com/devcontainers/universal:6",
+  "hostRequirements": {
+    "cpus": 2
+  },
+  "postCreateCommand": "npm install -g @openai/codex@0.164.0",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-vscode.live-server"
+      ],
+      "settings": {
+        "python.testing.pytestEnabled": true,
+        "python.testing.unittestEnabled": false,
+        "files.autoSave": "afterDelay"
+      }
+    }
+  }
+}
